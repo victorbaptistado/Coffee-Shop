@@ -1,0 +1,149 @@
+:root {
+  font-size: 62.5%;
+  background-color: #0e0e88;
+}
+
+* {
+  margin: 0rem;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.firstNavigation {
+  position: absolute;
+  margin-right: 35%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3%;
+}
+
+.firstNavigation nav {
+  text-decoration: none;
+}
+
+.firstNavigation nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.firstNavigation nav ul li {
+  text-align: center;
+  margin-left: 8rem;
+  list-style-type: none;
+}
+
+.firstNavigation nav ul li :hover {
+  color: red;
+}
+
+.firstNavigation nav ul li :focus {
+  color: white;
+}
+
+.firstNavigation nav ul li :active {
+  border-style: dashed;
+  border-color: rgba(255, 0, 0, 0.781);
+  opacity: 0.5;
+  text-shadow: red;
+}
+
+.firstNavigation nav ul li :target {
+  text-decoration: underline;
+}
+
+.firstNavigation nav ul li a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #dcfeff;
+}
+
+#backgroundOurCoffees {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#158ff3));
+  background-image: linear-gradient(black, #158ff3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: right;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+#backgroundOurCoffees .textHeader {
+  margin-top: 14%;
+}
+
+#backgroundOurCoffees .textHeader h1 {
+  font-size: 4.5rem;
+  color: #dcfeff;
+  display: block;
+  position: inherit;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#backgroundOurCoffees .textHeader h2 {
+  font-size: 2rem;
+  color: #dcfeff;
+  display: block;
+  margin-top: 3%;
+  position: inherit;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#backgroundOurCoffees .imageHeader {
+  -webkit-filter: opacity(0.9);
+          filter: opacity(0.9);
+}
+
+.secondNavigation nav {
+  background-color: #23239c;
+}
+
+.secondNavigation nav ul {
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.secondNavigation nav ul li {
+  margin-left: 5%;
+  color: #dcfeff;
+  margin-right: 7%;
+  list-style-type: none;
+}
+
+.secondNavigation nav ul li a {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.backgroundBody {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-filter: opacity(0.8);
+          filter: opacity(0.8);
+}
+/*# sourceMappingURL=index.css.map */

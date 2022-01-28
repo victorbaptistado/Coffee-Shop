@@ -1,0 +1,111 @@
+$navText: rgb(220, 254, 255);
+
+:root {
+  font-size: 62.5%;
+  background-color: rgb(14, 14, 136);
+}
+
+* {
+  margin: 0rem;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.firstNavigation {
+  position: absolute;
+  margin-right: 35%;
+  width: fit-content;
+  padding: 3%;
+  nav {
+    text-decoration: none;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      li {
+        text-align: center;
+        margin-left: 8rem;
+        list-style-type: none;
+        :hover {
+          color: red;
+        }
+        :focus {
+          color: rgb(255, 255, 255);
+        }
+        :active {
+          border-style: dashed;
+          border-color: rgba(255, 0, 0, 0.781);
+          opacity: 0.5;
+          text-shadow: red;
+        }
+        :target {
+          text-decoration: underline;
+        }
+        a {
+          font-size: 2rem;
+          text-decoration: none;
+          color: $navText;
+        }
+      }
+    }
+  }
+}
+
+#backgroundOurCoffees {
+  background-image: linear-gradient(black, rgb(21, 143, 243));
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  justify-content: right;
+  .textHeader {
+    margin-top: 14%;
+    h1 {
+      font-size: 4.5rem;
+      color: $navText;
+      display: block;
+
+      position: inherit;
+      justify-content: center;
+    }
+    h2 {
+      font-size: 2rem;
+      color: $navText;
+      display: block;
+      margin-top: 3%;
+      position: inherit;
+      justify-content: center;
+    }
+  }
+  .imageHeader {
+    filter: opacity(0.9);
+  }
+}
+
+.secondNavigation {
+  nav {
+    background-color: rgb(35, 35, 156);
+    ul {
+      padding: 2%;
+      display: flex;
+      flex-direction: row;
+      li {
+        margin-left: 5%;
+        color: $navText;
+        margin-right: 7%;
+        list-style-type: none;
+        a {
+          font-size: 2rem;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.backgroundBody {
+  width: 100%;
+  height: fit-content;
+  filter: opacity(0.8);
+}
