@@ -1,8 +1,12 @@
 $navText: rgb(220, 254, 255);
+@mixin row {
+  display: flex;
+  flex-direction: row;
+}
 
 :root {
   font-size: 62.5%;
-  background-color: rgb(14, 14, 136);
+  background-image: url(/Images/victorian-style.jpg);
 }
 
 * {
@@ -21,8 +25,7 @@ $navText: rgb(220, 254, 255);
     text-decoration: none;
 
     ul {
-      display: flex;
-      flex-direction: row;
+      @include row();
 
       li {
         text-align: center;
@@ -55,8 +58,7 @@ $navText: rgb(220, 254, 255);
 
 #backgroundOurCoffees {
   background-image: linear-gradient(black, rgb(21, 143, 243));
-  display: flex;
-  flex-direction: row;
+  @include row();
   text-align: right;
   justify-content: right;
   .textHeader {
@@ -65,7 +67,6 @@ $navText: rgb(220, 254, 255);
       font-size: 4.5rem;
       color: $navText;
       display: block;
-
       position: inherit;
       justify-content: center;
     }
@@ -107,5 +108,32 @@ $navText: rgb(220, 254, 255);
 .backgroundBody {
   width: 100%;
   height: fit-content;
-  filter: opacity(0.8);
+  .twoRows {
+    margin-top: 7%;
+    @include row();
+
+    background-color: rgb(196, 197, 197);
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    .firstRow {
+    }
+    .secondRow {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      p {
+        font-size: 1.8rem;
+        margin-left: 25rem;
+        margin-right: 25rem;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h2 {
+        color: rgb(94, 14, 14);
+        font-size: 3rem;
+        margin-bottom: 5rem;
+      }
+    }
+  }
 }

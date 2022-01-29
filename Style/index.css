@@ -1,6 +1,6 @@
 :root {
   font-size: 62.5%;
-  background-color: #0e0e88;
+  background-image: url(/Images/victorian-style.jpg);
 }
 
 * {
@@ -143,7 +143,47 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  -webkit-filter: opacity(0.8);
-          filter: opacity(0.8);
+}
+
+.backgroundBody .twoRows {
+  margin-top: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #c4c5c5;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.backgroundBody .twoRows .secondRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.backgroundBody .twoRows .secondRow p {
+  font-size: 1.8rem;
+  margin-left: 25rem;
+  margin-right: 25rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.backgroundBody .twoRows .secondRow h2 {
+  color: #5e0e0e;
+  font-size: 3rem;
+  margin-bottom: 5rem;
 }
 /*# sourceMappingURL=index.css.map */
