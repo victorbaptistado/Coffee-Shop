@@ -16,6 +16,19 @@ $navText: rgb(220, 254, 255);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
+p {
+  font-size: 1.8rem;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color: rgb(94, 14, 14);
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
 .firstNavigation {
   position: absolute;
   margin-right: 35%;
@@ -79,7 +92,7 @@ $navText: rgb(220, 254, 255);
       justify-content: center;
     }
   }
-  .imageHeader {
+  img {
     filter: opacity(0.9);
   }
 }
@@ -111,29 +124,20 @@ $navText: rgb(220, 254, 255);
   .twoRows {
     margin-top: 7%;
     @include row();
-
     background-color: rgb(196, 197, 197);
-    width: 100%;
     margin-right: auto;
     margin-left: auto;
     .firstRow {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
     }
     .secondRow {
       display: flex;
       flex-direction: column;
       text-align: center;
       justify-content: center;
-      p {
-        font-size: 1.8rem;
-        margin-left: 25rem;
-        margin-right: 25rem;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      h2 {
-        color: rgb(94, 14, 14);
-        font-size: 3rem;
-        margin-bottom: 5rem;
-      }
     }
   }
 }
