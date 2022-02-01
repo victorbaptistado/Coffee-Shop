@@ -1,13 +1,33 @@
 $navText: rgb(220, 254, 255);
+
 @mixin row {
   display: flex;
   flex-direction: row;
 }
+
 @mixin text1 {
   h2 {
     color: rgb(94, 14, 14);
     font-size: 3rem;
     margin-bottom: 5rem;
+  }
+}
+
+@mixin navPseudo {
+  :hover {
+    color: red;
+  }
+  :focus {
+    color: rgb(255, 255, 255);
+  }
+  :active {
+    border-style: dashed;
+    border-color: rgba(255, 0, 0, 0.781);
+    opacity: 0.5;
+    text-shadow: red;
+  }
+  :target {
+    text-decoration: underline;
   }
 }
 
@@ -43,21 +63,7 @@ p {
         text-align: center;
         margin-left: 8rem;
         list-style-type: none;
-        :hover {
-          color: red;
-        }
-        :focus {
-          color: rgb(255, 255, 255);
-        }
-        :active {
-          border-style: dashed;
-          border-color: rgba(255, 0, 0, 0.781);
-          opacity: 0.5;
-          text-shadow: red;
-        }
-        :target {
-          text-decoration: underline;
-        }
+        @include navPseudo();
         a {
           font-size: 2rem;
           text-decoration: none;
@@ -72,6 +78,7 @@ p {
               "Lucida Sans", Arial, sans-serif;
           }
           h3 {
+            font-size: 2rem;
             margin-top: 20%;
           }
         }
@@ -92,9 +99,14 @@ p {
         color: $navText;
         margin-right: 7%;
         list-style-type: none;
+        @include navPseudo();
         a {
           font-size: 2rem;
           text-decoration: none;
+          color: $navText;
+          h3 {
+            font-size: 2rem;
+          }
         }
       }
     }
