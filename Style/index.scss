@@ -3,6 +3,13 @@ $navText: rgb(220, 254, 255);
   display: flex;
   flex-direction: row;
 }
+@mixin text1 {
+  h2 {
+    color: rgb(94, 14, 14);
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+}
 
 :root {
   font-size: 62.5%;
@@ -23,12 +30,6 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h2 {
-  color: rgb(94, 14, 14);
-  font-size: 3rem;
-  margin-bottom: 5rem;
-}
-
 .firstNavigation {
   position: absolute;
   margin-right: 35%;
@@ -36,10 +37,8 @@ h2 {
   padding: 3%;
   nav {
     text-decoration: none;
-
     ul {
       @include row();
-
       li {
         text-align: center;
         margin-left: 8rem;
@@ -63,6 +62,39 @@ h2 {
           font-size: 2rem;
           text-decoration: none;
           color: $navText;
+          h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 4rem;
+          }
+          h2 {
+            font-size: 3rem;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+              "Lucida Sans", Arial, sans-serif;
+          }
+          h3 {
+            margin-top: 20%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.secondNavigation {
+  nav {
+    background-color: rgb(35, 35, 156);
+    ul {
+      padding: 2%;
+      display: flex;
+      flex-direction: row;
+      li {
+        margin-left: 5%;
+        color: $navText;
+        margin-right: 7%;
+        list-style-type: none;
+        a {
+          font-size: 2rem;
+          text-decoration: none;
         }
       }
     }
@@ -97,27 +129,6 @@ h2 {
   }
 }
 
-.secondNavigation {
-  nav {
-    background-color: rgb(35, 35, 156);
-    ul {
-      padding: 2%;
-      display: flex;
-      flex-direction: row;
-      li {
-        margin-left: 5%;
-        color: $navText;
-        margin-right: 7%;
-        list-style-type: none;
-        a {
-          font-size: 2rem;
-          text-decoration: none;
-        }
-      }
-    }
-  }
-}
-
 .backgroundBody {
   width: 100%;
   height: fit-content;
@@ -132,12 +143,14 @@ h2 {
       flex-direction: column;
       text-align: center;
       justify-content: center;
+      @include text1();
     }
     .secondRow {
       display: flex;
       flex-direction: column;
       text-align: center;
       justify-content: center;
+      @include text1();
     }
   }
 }

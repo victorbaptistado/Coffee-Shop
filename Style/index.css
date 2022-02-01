@@ -18,12 +18,6 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h2 {
-  color: #5e0e0e;
-  font-size: 3rem;
-  margin-bottom: 5rem;
-}
-
 .firstNavigation {
   position: absolute;
   margin-right: 35%;
@@ -78,6 +72,47 @@ h2 {
   color: #dcfeff;
 }
 
+.firstNavigation nav ul li a h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 4rem;
+}
+
+.firstNavigation nav ul li a h2 {
+  font-size: 3rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.firstNavigation nav ul li a h3 {
+  margin-top: 20%;
+}
+
+.secondNavigation nav {
+  background-color: #23239c;
+}
+
+.secondNavigation nav ul {
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.secondNavigation nav ul li {
+  margin-left: 5%;
+  color: #dcfeff;
+  margin-right: 7%;
+  list-style-type: none;
+}
+
+.secondNavigation nav ul li a {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
 #backgroundOurCoffees {
   background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#158ff3));
   background-image: linear-gradient(black, #158ff3);
@@ -124,33 +159,6 @@ h2 {
           filter: opacity(0.9);
 }
 
-.secondNavigation nav {
-  background-color: #23239c;
-}
-
-.secondNavigation nav ul {
-  padding: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.secondNavigation nav ul li {
-  margin-left: 5%;
-  color: #dcfeff;
-  margin-right: 7%;
-  list-style-type: none;
-}
-
-.secondNavigation nav ul li a {
-  font-size: 2rem;
-  text-decoration: none;
-}
-
 .backgroundBody {
   width: 100%;
   height: -webkit-fit-content;
@@ -186,6 +194,12 @@ h2 {
           justify-content: center;
 }
 
+.backgroundBody .twoRows .firstRow h2 {
+  color: #5e0e0e;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
 .backgroundBody .twoRows .secondRow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,5 +212,11 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.backgroundBody .twoRows .secondRow h2 {
+  color: #5e0e0e;
+  font-size: 3rem;
+  margin-bottom: 5rem;
 }
 /*# sourceMappingURL=index.css.map */
