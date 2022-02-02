@@ -1,4 +1,5 @@
 $navText: rgb(220, 254, 255);
+$backgroundText: rgb(196, 197, 197);
 
 @mixin row {
   display: flex;
@@ -25,9 +26,6 @@ $navText: rgb(220, 254, 255);
     border-color: rgba(255, 0, 0, 0.781);
     opacity: 0.5;
     text-shadow: red;
-  }
-  :target {
-    text-decoration: underline;
   }
 }
 
@@ -56,14 +54,13 @@ p {
   width: fit-content;
   padding: 3%;
   nav {
-    text-decoration: none;
     ul {
       @include row();
       li {
+        @include navPseudo();
         text-align: center;
         margin-left: 8rem;
         list-style-type: none;
-        @include navPseudo();
         a {
           font-size: 2rem;
           text-decoration: none;
@@ -96,7 +93,6 @@ p {
       flex-direction: row;
       li {
         margin-left: 5%;
-        color: $navText;
         margin-right: 7%;
         list-style-type: none;
         @include navPseudo();
@@ -119,7 +115,7 @@ p {
   text-align: right;
   justify-content: right;
   .textHeader {
-    margin-top: 14%;
+    margin-top: 17%;
     h1 {
       font-size: 4.5rem;
       color: $navText;
@@ -144,10 +140,19 @@ p {
 .backgroundBody {
   width: 100%;
   height: fit-content;
+  .oneRow {
+    text-align: left;
+    @include text1();
+    background-color: $backgroundText;
+    width: 70%;
+    margin-top: 7%;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .twoRows {
     margin-top: 7%;
     @include row();
-    background-color: rgb(196, 197, 197);
+    background-color: $backgroundText;
     margin-right: auto;
     margin-left: auto;
     .firstRow {

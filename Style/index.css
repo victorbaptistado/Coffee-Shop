@@ -27,10 +27,6 @@ p {
   padding: 3%;
 }
 
-.firstNavigation nav {
-  text-decoration: none;
-}
-
 .firstNavigation nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,10 +56,6 @@ p {
   border-color: rgba(255, 0, 0, 0.781);
   opacity: 0.5;
   text-shadow: red;
-}
-
-.firstNavigation nav ul li :target {
-  text-decoration: underline;
 }
 
 .firstNavigation nav ul li a {
@@ -104,7 +96,6 @@ p {
 
 .secondNavigation nav ul li {
   margin-left: 5%;
-  color: #dcfeff;
   margin-right: 7%;
   list-style-type: none;
 }
@@ -122,10 +113,6 @@ p {
   border-color: rgba(255, 0, 0, 0.781);
   opacity: 0.5;
   text-shadow: red;
-}
-
-.secondNavigation nav ul li :target {
-  text-decoration: underline;
 }
 
 .secondNavigation nav ul li a {
@@ -155,7 +142,7 @@ p {
 }
 
 #backgroundOurCoffees .textHeader {
-  margin-top: 14%;
+  margin-top: 17%;
 }
 
 #backgroundOurCoffees .textHeader h1 {
@@ -189,6 +176,21 @@ p {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.backgroundBody .oneRow {
+  text-align: left;
+  background-color: #c4c5c5;
+  width: 70%;
+  margin-top: 7%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.backgroundBody .oneRow h2 {
+  color: #5e0e0e;
+  font-size: 3rem;
+  margin-bottom: 5rem;
 }
 
 .backgroundBody .twoRows {
