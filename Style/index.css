@@ -13,8 +13,6 @@
 
 p {
   font-size: 1.8rem;
-  margin-left: 20%;
-  margin-right: 20%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -185,12 +183,26 @@ p {
   margin-top: 7%;
   margin-right: auto;
   margin-left: auto;
+  padding: 5%;
 }
 
 .backgroundBody .oneRow h2 {
   color: #5e0e0e;
   font-size: 3rem;
   margin-bottom: 5rem;
+}
+
+.backgroundBody .oneRow p {
+  margin-right: 0%;
+}
+
+.backgroundBody .oneRow img {
+  width: 30%;
+  float: right;
+}
+
+.backgroundBody .oneRow h2 {
+  text-align: center;
 }
 
 .backgroundBody .twoRows {
@@ -227,6 +239,11 @@ p {
   margin-bottom: 5rem;
 }
 
+.backgroundBody .twoRows .firstRow p {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 .backgroundBody .twoRows .secondRow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,5 +262,10 @@ p {
   color: #5e0e0e;
   font-size: 3rem;
   margin-bottom: 5rem;
+}
+
+.backgroundBody .twoRows .secondRow p {
+  margin-left: 20%;
+  margin-right: 20%;
 }
 /*# sourceMappingURL=index.css.map */

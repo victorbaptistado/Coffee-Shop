@@ -43,8 +43,6 @@ $backgroundText: rgb(196, 197, 197);
 
 p {
   font-size: 1.8rem;
-  margin-left: 20%;
-  margin-right: 20%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -148,6 +146,17 @@ p {
     margin-top: 7%;
     margin-right: auto;
     margin-left: auto;
+    padding: 5%;
+    p {
+      margin-right: 0%;
+    }
+    img {
+      width: 30%;
+      float: right;
+    }
+    h2 {
+      text-align: center;
+    }
   }
   .twoRows {
     margin-top: 7%;
@@ -161,6 +170,10 @@ p {
       text-align: center;
       justify-content: center;
       @include text1();
+      p {
+        margin-left: 20%;
+        margin-right: 20%;
+      }
     }
     .secondRow {
       display: flex;
@@ -168,6 +181,10 @@ p {
       text-align: center;
       justify-content: center;
       @include text1();
+      p {
+        margin-left: 20%;
+        margin-right: 20%;
+      }
     }
   }
 }
