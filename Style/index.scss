@@ -1,5 +1,5 @@
 $navText: rgb(220, 254, 255);
-$backgroundText: rgb(196, 197, 197);
+$backgroundText: rgb(231, 243, 243);
 
 @mixin row {
   display: flex;
@@ -151,6 +151,7 @@ p {
       margin-right: 0%;
     }
     img {
+      margin-left: 4%;
       width: 30%;
       float: right;
     }

@@ -178,7 +178,7 @@ p {
 
 .backgroundBody .oneRow {
   text-align: left;
-  background-color: #c4c5c5;
+  background-color: #e7f3f3;
   width: 70%;
   margin-top: 7%;
   margin-right: auto;
@@ -197,6 +197,7 @@ p {
 }
 
 .backgroundBody .oneRow img {
+  margin-left: 4%;
   width: 30%;
   float: right;
 }
@@ -214,7 +215,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #c4c5c5;
+  background-color: #e7f3f3;
   margin-right: auto;
   margin-left: auto;
 }
