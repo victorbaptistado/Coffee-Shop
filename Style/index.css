@@ -56,8 +56,13 @@ p {
   text-shadow: red;
 }
 
+@media (max-width: 1023px) {
+  .firstNavigation nav ul li {
+    margin-left: 5rem;
+  }
+}
+
 .firstNavigation nav ul li a {
-  font-size: 2rem;
   text-decoration: none;
   color: #dcfeff;
 }
@@ -67,14 +72,32 @@ p {
   font-size: 4rem;
 }
 
+@media (max-width: 1023px) {
+  .firstNavigation nav ul li a h1 {
+    font-size: 2.7rem;
+  }
+}
+
 .firstNavigation nav ul li a h2 {
   font-size: 3rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+@media (max-width: 1023px) {
+  .firstNavigation nav ul li a h2 {
+    font-size: 2rem;
+  }
+}
+
 .firstNavigation nav ul li a h3 {
   font-size: 2rem;
   margin-top: 20%;
+}
+
+@media (max-width: 1023px) {
+  .firstNavigation nav ul li a h3 {
+    font-size: 1.5rem;
+  }
 }
 
 .secondNavigation nav {
@@ -90,10 +113,13 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .secondNavigation nav ul li {
-  margin-left: 5%;
+  margin-left: 0%;
   margin-right: 7%;
   list-style-type: none;
 }
@@ -137,36 +163,47 @@ p {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
+  display: flex;
 }
 
 #backgroundOurCoffees .textHeader {
-  margin-top: 17%;
-}
-
-#backgroundOurCoffees .textHeader h1 {
-  font-size: 4.5rem;
-  color: #dcfeff;
-  display: block;
-  position: inherit;
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 1023px) {
+  #backgroundOurCoffees .textHeader {
+    text-align: right;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+}
+
+#backgroundOurCoffees .textHeader h1 {
+  margin-top: 20rem;
+  font-size: 4.5rem;
+  color: #dcfeff;
 }
 
 #backgroundOurCoffees .textHeader h2 {
   font-size: 2rem;
   color: #dcfeff;
-  display: block;
   margin-top: 3%;
-  position: inherit;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+@media (max-width: 1023px) {
+  #backgroundOurCoffees .textHeader h2 {
+    font-size: 2rem;
+    margin-top: 3%;
+  }
 }
 
 #backgroundOurCoffees img {
-  -webkit-filter: opacity(0.9);
-          filter: opacity(0.9);
+  width: 55%;
+  float: right;
 }
 
 .backgroundBody {

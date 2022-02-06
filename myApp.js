@@ -1,16 +1,16 @@
+var body = document.getElementsByTagName("body");
 
 
 
 
-
-function myFunction(x) {
-  if (x.matches) { // If media query matches
-    document.body.style.backgroundColor = "yellow";
+function myFunction(mobile) {
+  if (mobile.matches ) { // If media query matches
+    console.log("Good");
   } else {
     document.body.style.backgroundColor = "pink";
   }
 }
 
-var x = window.matchMedia("(max-width: 700px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
+var mobile = window.matchMedia("(max-width: 700px)")
+myFunction(mobile) // Call listener function at run time
+mobile.addListener(myFunction) // Attach listener function on state changes
