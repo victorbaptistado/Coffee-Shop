@@ -192,13 +192,28 @@ p {
       margin-right: 0%;
     }
     img {
-      margin-left: 4%;
-      width: 30%;
       float: right;
+      width: 30%;
+      margin-left: 4%;
+      @media (max-width: $tablet) {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10%;
+      }
+      @media (max-width: $mobile) {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10%;
+      }
     }
     h2 {
       text-align: left;
-      font-size: 4rem;
+      font-size: 3rem;
+      @media (max-width: $mobile) {
+        font-size: 2rem;
+      }
     }
   }
   .twoRows {

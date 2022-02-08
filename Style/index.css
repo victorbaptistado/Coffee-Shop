@@ -265,14 +265,38 @@ p {
 }
 
 .backgroundBody .oneRow img {
-  margin-left: 4%;
-  width: 30%;
   float: right;
+  width: 30%;
+  margin-left: 4%;
+}
+
+@media (max-width: 1023px) {
+  .backgroundBody .oneRow img {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10%;
+  }
+}
+
+@media (max-width: 765px) {
+  .backgroundBody .oneRow img {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10%;
+  }
 }
 
 .backgroundBody .oneRow h2 {
   text-align: left;
-  font-size: 4rem;
+  font-size: 3rem;
+}
+
+@media (max-width: 765px) {
+  .backgroundBody .oneRow h2 {
+    font-size: 2rem;
+  }
 }
 
 .backgroundBody .twoRows {
