@@ -102,21 +102,23 @@ p {
   nav {
     background-color: rgb(35, 35, 156);
     ul {
-      padding: 2%;
-      display: flex;
-      flex-direction: row;
+      @include row();
+      padding: 2.7%;
       justify-content: center;
+      overflow: scroll;
       li {
-        margin-left: 0%;
-        margin-right: 7%;
         list-style-type: none;
+        margin-right: 7%;
         @include navPseudo();
         a {
-          font-size: 2rem;
           text-decoration: none;
           color: $navText;
           h3 {
+            white-space: nowrap;
             font-size: 2rem;
+            @media (max-width: $mobile) {
+              font-size: 1.7rem;
+            }
           }
         }
       }
@@ -124,15 +126,12 @@ p {
   }
 }
 
-#backgroundOurCoffees {
-  background-image: linear-gradient(black, rgb(21, 143, 243));
+.backgroundHeader {
   @include row();
   text-align: right;
   justify-content: right;
   display: flex;
-  @media (max-width: $tablet) {
-  }
-
+  background-image: linear-gradient(black, rgb(21, 143, 243));
   .textHeader {
     text-align: center;
     justify-content: center;
@@ -163,6 +162,18 @@ p {
         font-size: 1.5rem;
         margin-bottom: 3%;
       }
+    }
+  }
+  .navigationToggle {
+    display: none;
+    @media (max-width: $tablet) {
+      margin-top: 3%;
+      margin-left: 3%;
+      position: absolute;
+      display: block;
+      float: left;
+      width: 35px;
+      color: white;
     }
   }
   img {
