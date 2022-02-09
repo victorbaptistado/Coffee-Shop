@@ -122,7 +122,15 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow: scroll;
+}
+
+@media (max-width: 765px) {
+  .secondNavigation nav ul {
+    overflow: scroll;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
 }
 
 .secondNavigation nav ul li {
