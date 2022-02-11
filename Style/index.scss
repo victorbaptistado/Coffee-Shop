@@ -98,6 +98,34 @@ p {
   }
 }
 
+.mobileNavigation {
+  display: none;
+  @media (max-width: $mobile) {
+    transform: translate(-300px, 0);
+    display: block;
+    position: absolute;
+    background-color: white;
+    padding: 5%;
+    width: 40%;
+    height: auto;
+    nav {
+      ul {
+        li {
+          list-style-type: none;
+          margin-top: 30%;
+          a {
+            text-decoration: none;
+          }
+
+          h2 {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
 .secondNavigation {
   nav {
     background-color: rgb(35, 35, 156);
@@ -133,16 +161,15 @@ p {
   @include row();
   text-align: right;
   justify-content: right;
-  display: flex;
   background-image: linear-gradient(black, rgb(21, 143, 243));
   .textHeader {
     text-align: center;
-    justify-content: center;
     @media (max-width: $tablet) {
       text-align: center;
     }
     h1 {
       margin-top: 16%;
+      margin-bottom: 1%;
       font-size: 4.5rem;
       color: $navText;
       @media (max-width: $tablet) {
@@ -156,7 +183,7 @@ p {
     h2 {
       font-size: 2rem;
       color: $navText;
-      margin-top: 3%;
+      margin-top: 0.3%;
       @media (max-width: $tablet) {
         font-size: 2rem;
         margin-top: 3%;
@@ -167,20 +194,32 @@ p {
       }
     }
   }
-  .navigationToggle {
+  button {
     display: none;
+    cursor: pointer;
     @media (max-width: $tablet) {
+      background-color: transparent;
+      border-color: transparent;
       margin-top: 3%;
       margin-left: 3%;
       position: absolute;
       display: block;
       float: left;
-      width: 35px;
-      color: white;
+      .navigationToggle {
+        width: 30px;
+        color: white;
+      }
     }
   }
+  .ourMenusImage {
+    position: block;
+    margin-left: -40%;
+    width: 100%;
+  }
   img {
-    width: 55%;
+    position: static;
+    width: 60%;
+    height: auto;
     float: right;
     @media (max-width: $mobile) {
       margin-top: -15%;

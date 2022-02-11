@@ -1,6 +1,4 @@
-var body = document.getElementsByTagName("body");
-
-
+/*var body = document.getElementsByTagName("body");
 
 
 function myFunction(mobile) {
@@ -14,3 +12,15 @@ function myFunction(mobile) {
 var mobile = window.matchMedia("(max-width: 765px)")
 myFunction(mobile) // Call listener function at run time
 mobile.addListener(myFunction) // Attach listener function on state changes
+
+*/
+
+var mobileMenu = document.querySelector(".mobileMenu").addEventListener("click", displayDiv);
+var mobileNavigation = document.querySelector(".mobileNavigation");
+
+
+
+function displayDiv (){
+  mobileNavigation
+}
+
