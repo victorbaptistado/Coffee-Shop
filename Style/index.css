@@ -106,12 +106,12 @@ p {
   }
 }
 
-.mobileNavigation {
+#mobileNavigation {
   display: none;
 }
 
 @media (max-width: 765px) {
-  .mobileNavigation {
+  #mobileNavigation {
     -webkit-transform: translate(-300px, 0);
             transform: translate(-300px, 0);
     display: block;
@@ -121,14 +121,14 @@ p {
     width: 40%;
     height: auto;
   }
-  .mobileNavigation nav ul li {
+  #mobileNavigation nav ul li {
     list-style-type: none;
     margin-top: 30%;
   }
-  .mobileNavigation nav ul li a {
+  #mobileNavigation nav ul li a {
     text-decoration: none;
   }
-  .mobileNavigation nav ul li h2 {
+  #mobileNavigation nav ul li h2 {
     color: black;
   }
 }
@@ -323,7 +323,7 @@ p {
 .backgroundBody .oneRow {
   text-align: left;
   background-color: #e7f3f3;
-  width: 70%;
+  width: 80%;
   margin-top: 7%;
   margin-right: auto;
   margin-left: auto;
@@ -340,14 +340,14 @@ p {
   margin-right: 0%;
 }
 
-.backgroundBody .oneRow img {
+.backgroundBody .oneRow .imgText {
   float: right;
   width: 30%;
   margin-left: 4%;
 }
 
 @media (max-width: 1023px) {
-  .backgroundBody .oneRow img {
+  .backgroundBody .oneRow .imgText {
     float: none;
     width: 100%;
     margin-left: 0;
@@ -356,7 +356,7 @@ p {
 }
 
 @media (max-width: 765px) {
-  .backgroundBody .oneRow img {
+  .backgroundBody .oneRow .imgText {
     float: none;
     width: 100%;
     margin-left: 0;
@@ -373,6 +373,43 @@ p {
   .backgroundBody .oneRow h2 {
     font-size: 2rem;
   }
+}
+
+.backgroundBody .oneRow .iconsWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.backgroundBody .oneRow .iconsWrapper .iconContainer {
+  margin-right: 5%;
+  margin-left: 5%;
+  text-align: center;
+}
+
+.backgroundBody .oneRow .iconsWrapper .iconContainer button {
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.backgroundBody .oneRow .iconsWrapper .iconContainer button .icon {
+  width: 90px;
+  text-align: center;
+  padding: 20%;
+}
+
+.backgroundBody .oneRow .iconsWrapper .iconContainer button p {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .backgroundBody .twoRows {

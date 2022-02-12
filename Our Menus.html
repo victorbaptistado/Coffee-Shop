@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="styleSheet" href="/Style/index.css"/>
-    <script src="/myApp.js"></script>
     <title>Our Menus</title>
 </head>
-<body>
+<body class="body">
     <header> 
         <div class="backgroundHeader">
         <div class="textHeader">
-            <div class="mobileNavigation">            
+            <div id="mobileNavigation">            
                 <nav>
                     <ul>
                     <li><a href="/index.html"><h2>LYNX CAFE</h2></a></li>
@@ -21,6 +20,7 @@
                     </ul>
                 </nav> 
             </div>
+
         <button class="mobileMenu"><img class="navigationToggle" src="/Images/menu-icon.png"/></button>
 
         <img class="ourMenusImage" src="/Images/coffee-row3.jpg">
@@ -51,11 +51,27 @@
 
          <section>
             <div class="oneRow">
+                <div class="iconsWrapper">
+                    <div class="iconContainer">
+                    <button><img class="icon" src="/Images/mug-icon.png"/></button>
+                    <p>Coffee</p>
+                    </div>
+                    </iconContainer>
+                    <div class="iconContainer">
+                    <button><img class="icon" src="/Images/cake-icon.png"></button>
+                    <p>Food</p>
+                    </div>
+                </div>
+
+
+
+
             </div> 
         </section>
     </div>
   
 </body>
+<script src="/myApp.js"></script>
 </html>
 
 
