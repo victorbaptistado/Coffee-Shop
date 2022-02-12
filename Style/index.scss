@@ -215,10 +215,12 @@ p {
       }
     }
   }
+
   .ourMenusImage {
     position: block;
     margin-left: -40%;
     width: 100%;
+
     @media (max-width: $mobile) {
       margin-top: 0%;
       margin-left: 0%;
