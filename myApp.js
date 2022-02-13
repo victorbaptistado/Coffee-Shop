@@ -17,21 +17,29 @@ mobile.addListener(myFunction) // Attach listener function on state changes
 
 
 /*var body = document.getElementsById("body");*/
-var mobileMenu = document.querySelector(".mobileMenu").addEventListener("click", displayDiv);
+var mobileMenu = document.getElementById("mobileMenu");
 var mobileNavigation = document.getElementById("mobileNavigation");
+var closeMenu = document.getElementById("closeMenu");
 /*var backgroundHeader = document.querySelector(".backgroundHeader").addEventListener("click", hideDiv);*/
 var backgroundBody = document.querySelector(".backgroundBody").addEventListener("click", hideDiv);
 var imageHeader = document.querySelector(".ourMenusImage").addEventListener("click", hideDiv)
 var headerText = document.querySelector(".headerText").addEventListener("click", hideDiv)
 
 
-function displayDiv (){
-  mobileNavigation.style.transform = "translate(0px)";
 
+mobileMenu.addEventListener("click", displayDiv);
+
+function displayDiv (){
+  mobileNavigation.style.display = "block";
+  mobileMenu.style.display = "none";
+  closeMenu.style.display = "block";
 }
 
-function hideDiv(){
+closeMenu.addEventListener("click", hideDiv);
 
-  mobileNavigation.style.transform = "translate(-300px)";
+function hideDiv(){
+  mobileNavigation.style.display = "none";
+  mobileMenu.style.display = "block";
+  closeMenu.style.display = "none";
  }
  

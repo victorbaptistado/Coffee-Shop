@@ -100,19 +100,17 @@ p {
 
 #mobileNavigation {
   display: none;
-  @media (max-width: $mobile) {
-    transform: translate(-300px, 0);
-    display: block;
+  @media (max-width: $tablet) {
     position: absolute;
-    background-color: white;
+    background-color: blue;
     padding: 5%;
-    width: 40%;
+    width: 100%;
     height: auto;
     nav {
       ul {
         li {
           list-style-type: none;
-          margin-top: 30%;
+          margin-top: 10%;
           a {
             text-decoration: none;
           }
@@ -167,6 +165,37 @@ p {
     @media (max-width: $tablet) {
       text-align: center;
     }
+    .navigationToggle {
+      display: none;
+      @media (max-width: $tablet) {
+        display: inline;
+      }
+    }
+    button {
+      display: none;
+      @media (max-width: $tablet) {
+        display: inline;
+        width: 30px;
+        background-color: transparent;
+        border-color: transparent;
+        margin-top: 3%;
+        margin-left: 3%;
+        position: absolute;
+        display: block;
+        float: left;
+      }
+    }
+    #mobileMenu {
+      display: none;
+      cursor: pointer;
+      @media (max-width: $tablet) {
+        display: block;
+      }
+    }
+    #closeMenu {
+      display: none;
+      cursor: pointer;
+    }
     h1 {
       margin-top: 14%;
       margin-bottom: 1%;
@@ -198,24 +227,6 @@ p {
       }
     }
   }
-  button {
-    display: none;
-    cursor: pointer;
-    @media (max-width: $tablet) {
-      background-color: transparent;
-      border-color: transparent;
-      margin-top: 3%;
-      margin-left: 3%;
-      position: absolute;
-      display: block;
-      float: left;
-      .navigationToggle {
-        width: 30px;
-        color: white;
-      }
-    }
-  }
-
   .ourMenusImage {
     position: block;
     margin-left: -40%;
