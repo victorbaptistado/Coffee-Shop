@@ -157,91 +157,95 @@ p {
 
 .backgroundHeader {
   @include row();
-  text-align: right;
+  /*text-align: right;*/
   justify-content: right;
   background-image: linear-gradient(black, rgb(21, 143, 243));
   .textHeader {
     text-align: center;
+  }
+  .navigationToggle {
+    display: none;
     @media (max-width: $tablet) {
-      text-align: center;
+      display: inline;
     }
-    .navigationToggle {
-      display: none;
-      @media (max-width: $tablet) {
-        display: inline;
+  }
+  button {
+    display: none;
+    width: 35px;
+    @media (max-width: $tablet) {
+      display: inline;
+      background-color: transparent;
+      border-color: transparent;
+      margin-top: 3%;
+      margin-left: 3%;
+      position: absolute;
+      display: block;
+      float: left;
+      img {
+        width: 90%;
       }
     }
-    button {
-      display: none;
-      @media (max-width: $tablet) {
-        display: inline;
-        width: 30px;
-        background-color: transparent;
-        border-color: transparent;
-        margin-top: 3%;
-        margin-left: 3%;
-        position: absolute;
-        display: block;
-        float: left;
-      }
+  }
+  #mobileMenu {
+    display: none;
+    cursor: pointer;
+    @media (max-width: $tablet) {
+      display: block;
     }
-    #mobileMenu {
-      display: none;
-      cursor: pointer;
-      @media (max-width: $tablet) {
-        display: block;
-      }
-    }
-    #closeMenu {
-      display: none;
-      cursor: pointer;
+  }
+  #closeMenu {
+    display: none;
+    cursor: pointer;
+  }
+  .headerText {
+    margin-top: 12%;
+    margin-left: 20px;
+    margin-right: 0px;
+    @media (max-width: $mobile) {
+      margin-top: 0%;
     }
     h1 {
-      margin-top: 14%;
-      margin-bottom: 1%;
+      position: absolute;
       font-size: 4.5rem;
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
         sans-serif;
       color: $navText;
-      @media (max-width: $tablet) {
-        margin-top: 7%;
-      }
       @media (max-width: $mobile) {
+        position: static;
         font-size: 2rem;
         margin-top: 1%;
       }
     }
     h2 {
+      position: absolute;
+      margin-top: 7%;
       font-size: 2rem;
       font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
       color: $navText;
-      margin-top: 0.3%;
+
       @media (max-width: $tablet) {
         font-size: 1.5rem;
-        margin-top: 0%;
       }
       @media (max-width: $mobile) {
+        position: static;
+        margin-top: 1%;
         font-size: 1.5rem;
         margin-bottom: 0.5%;
       }
     }
   }
   .ourMenusImage {
-    position: block;
-    margin-left: -40%;
+    display: inline;
+    float: right;
     width: 100%;
-
     @media (max-width: $mobile) {
-      margin-top: 0%;
-      margin-left: 0%;
     }
   }
-  img {
-    position: static;
+  .headerImage {
     width: 60%;
-    height: auto;
     float: right;
+
     @media (max-width: $mobile) {
       margin-top: -15%;
       float: none;

@@ -22,8 +22,8 @@ var mobileNavigation = document.getElementById("mobileNavigation");
 var closeMenu = document.getElementById("closeMenu");
 /*var backgroundHeader = document.querySelector(".backgroundHeader").addEventListener("click", hideDiv);*/
 var backgroundBody = document.querySelector(".backgroundBody").addEventListener("click", hideDiv);
-var imageHeader = document.querySelector(".ourMenusImage").addEventListener("click", hideDiv)
-var headerText = document.querySelector(".headerText").addEventListener("click", hideDiv)
+var imageHeader = document.querySelector(".ourMenusImage").addEventListener("click", hideDiv);
+var headerText = document.querySelector(".headerText");
 
 
 
@@ -33,6 +33,8 @@ function displayDiv (){
   mobileNavigation.style.display = "block";
   mobileMenu.style.display = "none";
   closeMenu.style.display = "block";
+
+
 }
 
 closeMenu.addEventListener("click", hideDiv);
