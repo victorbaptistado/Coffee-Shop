@@ -113,6 +113,7 @@ p {
 @media (max-width: 1023px) {
   #mobileNavigation {
     position: absolute;
+    z-index: 1;
     background-color: blue;
     padding: 5%;
     width: 100%;
@@ -126,7 +127,7 @@ p {
     text-decoration: none;
   }
   #mobileNavigation nav ul li h2 {
-    color: black;
+    color: #dcfeff;
   }
 }
 
@@ -256,6 +257,7 @@ p {
 }
 
 .backgroundHeader #closeMenu {
+  z-index: 2;
   display: none;
   cursor: pointer;
 }
