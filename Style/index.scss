@@ -239,13 +239,10 @@ p {
     display: inline;
     float: right;
     width: 100%;
-    @media (max-width: $mobile) {
-    }
   }
   .headerImage {
     width: 60%;
     float: right;
-
     @media (max-width: $mobile) {
       margin-top: -15%;
       float: none;
