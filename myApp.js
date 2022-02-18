@@ -1,27 +1,18 @@
-/*var body = document.getElementsByTagName("body");*/ /*
-var bodyId = document.querySelector(".body").addEventListener("click", hideDiv)*/
-/*
-function myFunction(mobile) {
-  if (mobile.matches) { // If media query matches
-    document.getElementsByClassName;
-  } else {
-    document.body.style.backgroundColor = "pink";
-  }
-}
 
-var mobile = window.matchMedia("(max-width: 765px)")
-myFunction(mobile) // Call listener function at run time
-mobile.addListener(myFunction) // Attach listener function on state changes
-*/
 
-/*var body = document.getElementsById("body");*/
+
+
+
+
+
+
+/* ----- NAVIGATION MENU ------- */
+
+
 var mobileMenu = document.getElementById("mobileMenu");
 var mobileNavigation = document.getElementById("mobileNavigation");
 var closeMenu = document.getElementById("closeMenu");
-/*var backgroundHeader = document.querySelector(".backgroundHeader").addEventListener("click", hideDiv);*/
 
-
-var headerText = document.querySelector(".headerText");
 
 mobileMenu.addEventListener("click", displayDiv);
 
@@ -38,3 +29,7 @@ function hideDiv() {
   mobileMenu.style.display = "block";
   closeMenu.style.display = "none";
 }
+
+
+
+
