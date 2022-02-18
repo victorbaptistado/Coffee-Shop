@@ -33,7 +33,7 @@ $mobile: 765px;
 
 :root {
   font-size: 62.5%;
-  background-image: url(/Images/victorian-style.jpg);
+  background-image: url(/Images/art-style.jpg);
 }
 
 * {
@@ -103,22 +103,25 @@ p {
   @media (max-width: $tablet) {
     position: fixed;
     z-index: 1;
-    background-image: linear-gradient(black, rgb(21, 143, 243));
-
+    background-image: linear-gradient(rgb(12, 78, 136), rgb(239, 255, 15));
     width: 100%;
     height: 100%;
-    nav {
-      ul {
-        margin-top: 150px;
-        li {
-          list-style-type: none;
-          margin-top: 40px;
-          margin-left: 90px;
-          a {
+  }
+  nav {
+    ul {
+      margin-top: 150px;
+      li {
+        list-style-type: none;
+        margin-top: 40px;
+        margin-left: 90px;
+        a {
+          display: none;
+          @media (max-width: $tablet) {
+            display: block;
             text-decoration: none;
           }
-
           h2 {
+            display: block;
             color: $navText;
             text-align: left;
           }
@@ -162,7 +165,7 @@ p {
 .backgroundHeader {
   @include row();
   justify-content: right;
-  background-image: linear-gradient(black, rgb(21, 143, 243));
+  background-image: linear-gradient(rgb(12, 78, 136), rgb(239, 255, 15));
 
   .navigationToggle {
     display: none;
@@ -189,16 +192,18 @@ p {
   }
   #mobileMenu {
     display: none;
-    cursor: pointer;
     @media (max-width: $tablet) {
       display: block;
+      cursor: pointer;
     }
   }
   #closeMenu {
-    position: fixed;
-    z-index: 2;
     display: none;
-    cursor: pointer;
+    @media (max-width: $tablet) {
+      position: fixed;
+      z-index: 2;
+      cursor: pointer;
+    }
   }
   .headerText {
     margin-top: 12%;
@@ -213,6 +218,7 @@ p {
         sans-serif;
       color: $navText;
       @media (max-width: $tablet) {
+        font-size: 3rem;
       }
       @media (max-width: $mobile) {
         position: static;

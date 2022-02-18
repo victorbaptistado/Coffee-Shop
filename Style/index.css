@@ -1,6 +1,6 @@
 :root {
   font-size: 62.5%;
-  background-image: url(/Images/victorian-style.jpg);
+  background-image: url(/Images/art-style.jpg);
 }
 
 * {
@@ -114,26 +114,38 @@ p {
   #mobileNavigation {
     position: fixed;
     z-index: 1;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#158ff3));
-    background-image: linear-gradient(black, #158ff3);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#0c4e88), to(#efff0f));
+    background-image: linear-gradient(#0c4e88, #efff0f);
     width: 100%;
     height: 100%;
   }
-  #mobileNavigation nav ul {
-    margin-top: 150px;
-  }
-  #mobileNavigation nav ul li {
-    list-style-type: none;
-    margin-top: 40px;
-    margin-left: 90px;
-  }
+}
+
+#mobileNavigation nav ul {
+  margin-top: 150px;
+}
+
+#mobileNavigation nav ul li {
+  list-style-type: none;
+  margin-top: 40px;
+  margin-left: 90px;
+}
+
+#mobileNavigation nav ul li a {
+  display: none;
+}
+
+@media (max-width: 1023px) {
   #mobileNavigation nav ul li a {
+    display: block;
     text-decoration: none;
   }
-  #mobileNavigation nav ul li h2 {
-    color: #dcfeff;
-    text-align: left;
-  }
+}
+
+#mobileNavigation nav ul li a h2 {
+  display: block;
+  color: #dcfeff;
+  text-align: left;
 }
 
 .secondNavigation nav {
@@ -210,8 +222,8 @@ p {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#158ff3));
-  background-image: linear-gradient(black, #158ff3);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0c4e88), to(#efff0f));
+  background-image: linear-gradient(#0c4e88, #efff0f);
 }
 
 .backgroundHeader .navigationToggle {
@@ -247,20 +259,25 @@ p {
 
 .backgroundHeader #mobileMenu {
   display: none;
-  cursor: pointer;
 }
 
 @media (max-width: 1023px) {
   .backgroundHeader #mobileMenu {
     display: block;
+    cursor: pointer;
   }
 }
 
 .backgroundHeader #closeMenu {
-  position: fixed;
-  z-index: 2;
   display: none;
-  cursor: pointer;
+}
+
+@media (max-width: 1023px) {
+  .backgroundHeader #closeMenu {
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
 }
 
 .backgroundHeader .headerText {
@@ -279,6 +296,12 @@ p {
   left: 6%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #dcfeff;
+}
+
+@media (max-width: 1023px) {
+  .backgroundHeader .headerText h1 {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 765px) {
