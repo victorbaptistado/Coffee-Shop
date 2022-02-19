@@ -267,7 +267,7 @@ p {
   width: 100%;
   height: fit-content;
   .oneRow {
-    text-align: left;
+    text-align: center;
     @include text1();
     background-color: $backgroundText;
     width: 80%;
@@ -305,6 +305,7 @@ p {
     .iconsWrapper {
       @include row();
       justify-content: center;
+      margin-bottom: 5%;
       .iconContainer {
         margin-right: 5%;
         margin-left: 5%;
@@ -324,6 +325,12 @@ p {
           }
         }
       }
+    }
+    #myDropdownDrink {
+      display: inline;
+    }
+    #myDropdownFood {
+      display: none;
     }
   }
 

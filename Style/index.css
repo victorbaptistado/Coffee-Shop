@@ -367,7 +367,7 @@ p {
 }
 
 .backgroundBody .oneRow {
-  text-align: left;
+  text-align: center;
   background-color: #e7f3f3;
   width: 80%;
   margin-top: 7%;
@@ -432,6 +432,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 5%;
 }
 
 .backgroundBody .oneRow .iconsWrapper .iconContainer {
@@ -456,6 +457,14 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.backgroundBody .oneRow #myDropdownDrink {
+  display: inline;
+}
+
+.backgroundBody .oneRow #myDropdownFood {
+  display: none;
 }
 
 .backgroundBody .twoRows {
