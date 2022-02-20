@@ -348,7 +348,10 @@ p {
   .menuRow {
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 76%;
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
     padding: 3%;
     margin-top: 7%;
     background-color: $backgroundText;
@@ -385,9 +388,9 @@ p {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-
+      justify-content: center;
       .productContainer {
-        margin-left: 10%;
+        margin-left: 5%;
         text-align: center;
         .menuImg {
           width: 200px;

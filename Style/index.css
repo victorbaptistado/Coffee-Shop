@@ -521,10 +521,16 @@ p {
 .backgroundBody .menuRow {
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 76%;
   padding: 3%;
   margin-top: 7%;
   background-color: #e7f3f3;
+}
+
+@media (max-width: 765px) {
+  .backgroundBody .menuRow {
+    width: 100%;
+  }
 }
 
 .backgroundBody .menuRow .iconsWrapper {
@@ -583,10 +589,13 @@ p {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .backgroundBody .menuRow .productWrapper .productContainer {
-  margin-left: 10%;
+  margin-left: 5%;
   text-align: center;
 }
 
