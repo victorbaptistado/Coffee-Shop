@@ -366,20 +366,27 @@ p {
   height: fit-content;
 }
 
+.backgroundBody h1 {
+  margin-top: 4rem;
+  color: #5e0e0e;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+
+.backgroundBody h2 {
+  color: #5e0e0e;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
 .backgroundBody .oneRow {
-  text-align: center;
+  text-align: left;
   background-color: #e7f3f3;
   width: 80%;
   margin-top: 7%;
   margin-right: auto;
   margin-left: auto;
   padding: 5%;
-}
-
-.backgroundBody .oneRow h2 {
-  color: #5e0e0e;
-  font-size: 3rem;
-  margin-bottom: 5rem;
 }
 
 .backgroundBody .oneRow p {
@@ -408,63 +415,6 @@ p {
     margin-left: 0;
     margin-bottom: 10%;
   }
-}
-
-.backgroundBody .oneRow h2 {
-  text-align: left;
-  font-size: 3rem;
-}
-
-@media (max-width: 765px) {
-  .backgroundBody .oneRow h2 {
-    font-size: 2rem;
-  }
-}
-
-.backgroundBody .oneRow .iconsWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 5%;
-}
-
-.backgroundBody .oneRow .iconsWrapper .iconContainer {
-  margin-right: 5%;
-  margin-left: 5%;
-  text-align: center;
-}
-
-.backgroundBody .oneRow .iconsWrapper .iconContainer button {
-  cursor: pointer;
-  background-color: transparent;
-  border-color: transparent;
-}
-
-.backgroundBody .oneRow .iconsWrapper .iconContainer button .icon {
-  width: 90px;
-  text-align: center;
-  padding: 20%;
-}
-
-.backgroundBody .oneRow .iconsWrapper .iconContainer button p {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.backgroundBody .oneRow #myDropdownDrink {
-  display: inline;
-}
-
-.backgroundBody .oneRow #myDropdownFood {
-  display: none;
 }
 
 .backgroundBody .twoRows {
@@ -504,6 +454,13 @@ p {
           justify-content: center;
 }
 
+.backgroundBody .twoRows .firstRow h1 {
+  margin-top: 4rem;
+  color: #5e0e0e;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+
 .backgroundBody .twoRows .firstRow h2 {
   color: #5e0e0e;
   font-size: 3rem;
@@ -536,6 +493,13 @@ p {
           justify-content: center;
 }
 
+.backgroundBody .twoRows .secondRow h1 {
+  margin-top: 4rem;
+  color: #5e0e0e;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+
 .backgroundBody .twoRows .secondRow h2 {
   color: #5e0e0e;
   font-size: 3rem;
@@ -552,5 +516,81 @@ p {
     margin: 0 auto;
     width: 50%;
   }
+}
+
+.backgroundBody .menuRow {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding: 3%;
+  margin-top: 7%;
+  background-color: #e7f3f3;
+}
+
+.backgroundBody .menuRow .iconsWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5%;
+}
+
+.backgroundBody .menuRow .iconsWrapper .iconContainer {
+  margin-right: 5%;
+  margin-left: 5%;
+  text-align: center;
+}
+
+.backgroundBody .menuRow .iconsWrapper .iconContainer button {
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.backgroundBody .menuRow .iconsWrapper .iconContainer button .icon {
+  width: 90px;
+  text-align: center;
+  padding: 20%;
+}
+
+.backgroundBody .menuRow .iconsWrapper .iconContainer button p {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.backgroundBody .menuRow #myDropdownDrink {
+  display: inline;
+}
+
+.backgroundBody .menuRow #myDropdownFood {
+  display: none;
+}
+
+.backgroundBody .menuRow .productWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.backgroundBody .menuRow .productWrapper .productContainer {
+  margin-left: 10%;
+  text-align: center;
+}
+
+.backgroundBody .menuRow .productWrapper .productContainer .menuImg {
+  width: 200px;
 }
 /*# sourceMappingURL=index.css.map */
