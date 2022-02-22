@@ -600,6 +600,10 @@ p {
 }
 
 .backgroundBody .menuRow .productWrapper .productContainer .menuImg {
-  width: 200px;
+  width: 150px;
+}
+
+#food {
+  display: none;
 }
 /*# sourceMappingURL=index.css.map */

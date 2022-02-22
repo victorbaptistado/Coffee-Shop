@@ -64,21 +64,23 @@
                 </div>
             <h2>Selecione</h2>
 
-            <select id="myDropdownDrink">
-                <option value="todos">Todas as bebidas</option>
-                <option value="especiais">Cafés</option>
+            <select id="myDropdownDrink" onchange="getSelectValue();">
+                <option value="todasAsBebidas">Todas as bebidas</option>
+                <option value="cafés">Cafés</option>
                 <option value="chocolateQuente">Chocolate Quente</option>
                 <option value="shakes">Shakes</option>
 
             </select>
             <select id="myDropdownFood">
-                <option value="todos">Todos as comidas</option>
-                <option value="especiais">Beirute</option>
-                <option value="chocolateQuente">Refeição</option>
-                <option value="shakes">Delícia</option>
+                <option value="todasComidas">Todos as comidas</option>
+                <option value="Sanduíche">Beirute</option>
+                <option value="Refeição">Refeição</option>
+                <option value="Delícia">Delícia</option>
             </select>
 
+        <div id="drinks">
 
+            <div id="cafés">
             <h1>Cafés</h1>
             <div class="productWrapper">
             <div class="productContainer">
@@ -94,8 +96,16 @@
             <h2>Latte</h2>
             </div>
             </div>
+            </div>
 
-      
+            <div id="chocolateQuente">
+            <h1>Chocolate Quente</h1>
+            <div class="productWrapper">
+            <div class="productContainer">
+            <img class="menuImg" src="./Images/Menu/chocolate-quente.jpg"/>
+            </div>
+            </div>
+        </div>
 
 
 

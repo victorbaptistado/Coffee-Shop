@@ -393,9 +393,15 @@ p {
         margin-left: 1%;
         text-align: center;
         .menuImg {
-          width: 200px;
+          width: 150px;
         }
       }
     }
   }
+}
+
+#drinks {
+}
+#food {
+  display: none;
 }
