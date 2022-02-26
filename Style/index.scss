@@ -355,18 +355,29 @@ p {
     padding: 3%;
     margin-top: 7%;
     background-color: $backgroundText;
+
     .iconsWrapper {
       @include row();
       justify-content: center;
       margin-bottom: 5%;
+
       .iconContainer {
         margin-right: 5%;
         margin-left: 5%;
         text-align: center;
+        #bebida {
+          border-color: rgba(255, 0, 0, 0.788);
+          border-style: inset;
+        }
+        #comida {
+          border-color: rgba(255, 0, 0, 0.788);
+          border-style: hidden;
+        }
         button {
           cursor: pointer;
           background-color: transparent;
           border-color: transparent;
+
           .icon {
             width: 90px;
             text-align: center;

@@ -1,16 +1,23 @@
 
-var drinkBtn = document.getElementById("bebida").addEventListener("click", displayDrink);
-var foodBtn = document.getElementById("comida").addEventListener("click", displayFood);
+var drinkBtn = document.getElementById("bebida");
+var foodBtn = document.getElementById("comida");
 
 
+/*---- EVENTS ----*/
+drinkBtn.addEventListener("click", displayDrink);
+foodBtn.addEventListener("click", displayFood);
+drinkBtn.addEventListener("click", drinkBorder);
+foodBtn.addEventListener("click", foodBorder);
 
+
+/*---- DROPDOWN ----*/
 var dropdownDrink = document.getElementById("myDropdownDrink");
 var dropdownFood = document.getElementById("myDropdownFood");
 
 
-
 var drinks = document.getElementById("drinks");
 var food = document.getElementById("food");
+
 
 /* ---- DISPLAY DRINK || FOOD ---- */
 
@@ -23,11 +30,10 @@ function displayDrink(){
     /* Drinks || Food */
     drinks.style.display = "inline";
     food.style.display = "none";
-
+    
 } 
 
 function displayFood(){
-   
     /* Dropdown Drinks || Food */
     dropdownDrink.style.display = "none";
     dropdownFood.style.display = "inline";
@@ -35,11 +41,22 @@ function displayFood(){
     /* Drinks || Food */
     drinks.style.display = "none";
     food.style.display = "inline";
+
 } 
 
-/* ---- select DRINK ---- */
+/* ---- Border Color ---- */
 
-    
+function drinkBorder (){
+    drinkBtn.style.borderStyle = "inset";
+    foodBtn.style.borderStyle = "hidden";
+}
+
+function foodBorder (){
+    drinkBtn.style.borderStyle = "hidden";
+    foodBtn.style.borderStyle = "inset";
+}
+
+/* ---- select DRINK ---- */
 
 
 function getSelectValue(){

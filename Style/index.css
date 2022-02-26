@@ -553,6 +553,16 @@ p {
   text-align: center;
 }
 
+.backgroundBody .menuRow .iconsWrapper .iconContainer #bebida {
+  border-color: rgba(255, 0, 0, 0.788);
+  border-style: inset;
+}
+
+.backgroundBody .menuRow .iconsWrapper .iconContainer #comida {
+  border-color: rgba(255, 0, 0, 0.788);
+  border-style: hidden;
+}
+
 .backgroundBody .menuRow .iconsWrapper .iconContainer button {
   cursor: pointer;
   background-color: transparent;
