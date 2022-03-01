@@ -14,9 +14,9 @@
             <div id="mobileNavigation">            
                 <nav>
                     <ul>
-                        <li><a href="/index.html"><h2>Borsoi Cafe</h2></a></li>
-                        <li><a href="/Our Coffees.html"><h2>Nossos Cafés</h2></a></li>
-                        <li><a href="/Our Menus.html"><h2>Nosso Menu</h2></a></li>
+                        <li><a id="index" href="/index.html"><h2>Borsoi Cafe</h2></a></li>
+                        <li><a id="ourCoffees" href="/Our Coffees.html"><h2>Nossos Cafés</h2></a></li>
+                        <li><a id="ourMenus" href="/Our Menus.html"><h2>Nosso Menu</h2></a></li>
                     </ul>
                 </nav> 
             </div>
@@ -53,36 +53,35 @@
             <div class="menuRow">
                 <div class="iconsWrapper">
                     <div class="iconContainer">
-                    <button id="bebida"><img class="icon" src="/Images/mug-icon.png"/>
+                    <button id="drinkBtn"><img class="icon" src="/Images/mug-icon.png"/>
                     <p>Coffee</p>
                     </button>
                     </div>
                     </iconContainer>
                     <div class="iconContainer">
-                    <button id="comida"><img class="icon" src="/Images/cake-icon.png">
+                    <button id="foodBtn"><img class="icon" src="/Images/cake-icon.png">
                     <p>Food</p>
                     </button>
                     </div>  
                 </div>
             <h2>Selecione</h2>
 
-            <select id="myDropdownDrink" onchange="getSelectValue();">
+            <select id="myDropdownDrink" onchange="getSelectValueDrink();">
                 <option value="todasAsBebidas">Todas as bebidas</option>
                 <option value="cafés">Cafés</option>
                 <option value="chocolateQuente">Chocolate Quente</option>
                 <option value="shakes">Shakes</option>
-
             </select>
-            <select id="myDropdownFood">
-                <option value="todasComidas">Todos as comidas</option>
-                <option value="Sanduíche">Beirute</option>
-                <option value="Refeição">Refeição</option>
-                <option value="Delícia">Delícia</option>
+            <select id="myDropdownFood" onchange="getSelectValueFood();">
+                <option value="todasAsComidas">Todas as comidas</option>
+                <option value="sanduíche">Sanduíche</option>
+                <option value="refeição">Refeição</option>
+                <option value="caféDaManhã">Café da manhã</option>
             </select>
 
         <div id="drinks">
 
-            <div id="cafés">
+            <div id="cafés" >
             <h1>Cafés</h1>
             <div class="productWrapper">
             <div class="productContainer">
@@ -107,11 +106,43 @@
             <img class="menuImg" src="./Images/Menu/chocolate-quente.jpg"/>
             </div>
             </div>
-        </div>
+            </div>
 
+            <div id="milkShake">
+            <h1>Milk Shake</h1>
+            <div class="productWrapper">
+            <div class="productContainer">
+            <img class="menuImg" src="./Images/Menu/milkshake.jpg"/>
+            </div>
+            </div>
+            </div>
+        </div> 
+
+            <div id="foods">
+
+                <div id="sanduíche">
+                    <h1>Toasts</h1>
+                    <div class="productWrapper">
+                    <div class="productContainer">
+                    <img class="menuImg" src="./Images/Menu/toasts.jpeg"/>
+                    </div>
+                    </div>
+                    </div>
+
+                    <div id="caféDaManhã">
+                        <h1>Croissant recheado com Queijo Godar</h1>
+                        <div class="productWrapper">
+                        <div class="productContainer">
+                        <img class="menuImg" src="./Images/Menu/croissant.jpeg"/>
+                        </div>
+                        </div>
+                        </div>
 
 
             </div> 
+
+      
+       
         </section>
     </div>
     <script src="/myApp.js"></script>

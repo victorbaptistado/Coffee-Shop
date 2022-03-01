@@ -1,6 +1,6 @@
 
-var drinkBtn = document.getElementById("bebida");
-var foodBtn = document.getElementById("comida");
+var drinkBtn = document.getElementById("drinkBtn");
+var foodBtn = document.getElementById("foodBtn");
 
 
 /*---- EVENTS ----*/
@@ -14,10 +14,10 @@ foodBtn.addEventListener("click", foodBorder);
 var dropdownDrink = document.getElementById("myDropdownDrink");
 var dropdownFood = document.getElementById("myDropdownFood");
 
-
 var drinks = document.getElementById("drinks");
-var food = document.getElementById("food");
+var foods = document.getElementById("foods");
 
+foods.style.display = "none";
 
 /* ---- DISPLAY DRINK || FOOD ---- */
 
@@ -29,7 +29,7 @@ function displayDrink(){
 
     /* Drinks || Food */
     drinks.style.display = "inline";
-    food.style.display = "none";
+    foods.style.display = "none";
     
 } 
 
@@ -40,7 +40,7 @@ function displayFood(){
 
     /* Drinks || Food */
     drinks.style.display = "none";
-    food.style.display = "inline";
+    foods.style.display = "inline";
 
 } 
 
@@ -59,50 +59,63 @@ function foodBorder (){
 /* ---- select DRINK ---- */
 
 
-function getSelectValue(){
+function getSelectValueDrink(){
     var selectedValue = document.getElementById("myDropdownDrink").value;
-
     var cafés = document.getElementById("cafés");
     var chocolateQuente = document.getElementById("chocolateQuente");
+    var milkShake = document.getElementById("milkShake");
 
     cafés.style.display = "none";
     chocolateQuente.style.display = "none";
+    milkShake.style.display = "none";
 
     switch(selectedValue){
         case "todasAsBebidas": 
         cafés.style.display = "inline";
         chocolateQuente.style.display = "inline";
-
+        milkShake.style.display = "inline";
         break;
+
         case "cafés": 
         cafés.style.display = "inline";
         break;
+
         case "chocolateQuente": 
         chocolateQuente.style.display = "inline";
         break;
-        /*case "shakes": 
-        
+
+        case "shakes": 
+        milkShake.style.display = "inline";
         break;
-    */
+  
     }
 
 }
 
 
+/* ---- select FOOD  ---- */
 
-/*
+function getSelectValueFood(){
+    var selectedValue = document.getElementById("myDropdownFood").value;
+    var sanduíche = document.getElementById("sanduíche");
+    var caféDaManhã = document.getElementById("caféDaManhã");
+   
+    sanduíche.style.display = "none";
+    caféDaManhã.style.display = "none";
 
- function filter() {
-    var keyword = document.getElementById("");
-    var select = document.getElementById("myDropdown");
-
-    for (var i = 0; i < select.length; i++) {
-        var txt = select.options[i].text;
-        if (!txt.match(keyword)) {
-            $(select.options[i]).attr('disabled', 'disabled').hide();
-        } else {
-            $(select.options[i]).removeAttr('disabled').show();
-        }
+    switch(selectedValue){
+        case "todasAsComidas": 
+        sanduíche.style.display = "inline";
+        caféDaManhã.style.display = "inline";
+        break;
+        case "sanduíche": 
+        sanduíche.style.display = "inline";
+        break;
+        case "caféDaManhã":
+        caféDaManhã.style.display = "inline";
+        break;
 
     }
-}*/
+
+}
+

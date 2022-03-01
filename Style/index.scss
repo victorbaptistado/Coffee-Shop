@@ -73,8 +73,10 @@ p {
           margin-left: 5rem;
         }
         list-style-type: none;
-        a {
+        #index {
           text-decoration: none;
+        }
+        a {
           color: $navText;
           h1 {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -365,11 +367,11 @@ p {
         margin-right: 5%;
         margin-left: 5%;
         text-align: center;
-        #bebida {
+        #drinkBtn {
           border-color: rgba(255, 0, 0, 0.788);
           border-style: inset;
         }
-        #comida {
+        #foodBtn {
           border-color: rgba(255, 0, 0, 0.788);
           border-style: hidden;
         }

@@ -68,8 +68,11 @@ p {
   }
 }
 
-.firstNavigation nav ul li a {
+.firstNavigation nav ul li #index {
   text-decoration: none;
+}
+
+.firstNavigation nav ul li a {
   color: #dcfeff;
 }
 
@@ -553,12 +556,12 @@ p {
   text-align: center;
 }
 
-.backgroundBody .menuRow .iconsWrapper .iconContainer #bebida {
+.backgroundBody .menuRow .iconsWrapper .iconContainer #drinkBtn {
   border-color: rgba(255, 0, 0, 0.788);
   border-style: inset;
 }
 
-.backgroundBody .menuRow .iconsWrapper .iconContainer #comida {
+.backgroundBody .menuRow .iconsWrapper .iconContainer #foodBtn {
   border-color: rgba(255, 0, 0, 0.788);
   border-style: hidden;
 }
