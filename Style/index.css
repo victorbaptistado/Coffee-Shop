@@ -45,6 +45,16 @@ p {
   text-align: center;
   margin-left: 8rem;
   list-style-type: none;
+  text-decoration: none;
+  /*
+        #index {
+          text-decoration: underline rgba(255, 0, 0, 0.562);
+        }
+        #ourMenus {
+        }
+        #ourCoffees {
+        }
+        */
 }
 
 .firstNavigation nav ul li :hover {
@@ -68,12 +78,10 @@ p {
   }
 }
 
-.firstNavigation nav ul li #index {
-  text-decoration: none;
-}
-
 .firstNavigation nav ul li a {
   color: #dcfeff;
+  -webkit-text-decoration: transparent;
+          text-decoration: transparent;
 }
 
 .firstNavigation nav ul li a h1 {

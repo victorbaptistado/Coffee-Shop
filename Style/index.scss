@@ -73,11 +73,19 @@ p {
           margin-left: 5rem;
         }
         list-style-type: none;
+        text-decoration: none;
+        /*
         #index {
-          text-decoration: none;
+          text-decoration: underline rgba(255, 0, 0, 0.562);
         }
+        #ourMenus {
+        }
+        #ourCoffees {
+        }
+        */
         a {
           color: $navText;
+          text-decoration: transparent;
           h1 {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 4rem;

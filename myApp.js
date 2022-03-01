@@ -1,12 +1,5 @@
 
-
-
-
-
-
-
-
-/* ----- NAVIGATION MENU ------- */
+/* ----- MOBILE NAVIGATION MENU ------- */
 
 
 var mobileMenu = document.getElementById("mobileMenu");
@@ -32,4 +25,14 @@ function hideDiv() {
 
 
 
+
+
+/* ----- FIRST NAVIGATION MENU ------- */
+/*
+
+var index = document.getElementById("index");
+var ourCoffees = document.getElementById("ourCoffees");
+var ourMenus = document.getElementById("ourMenus");
+
+*/
 
