@@ -10,6 +10,33 @@ $mobile: 765px;
 
 @mixin text1 {
   h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4rem;
+    color: $navText;
+    @media (max-width: $tablet) {
+      font-size: 2.7rem;
+    }
+  }
+  h2 {
+    font-size: 2rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    color: $navText;
+    @media (max-width: $tablet) {
+      font-size: 2rem;
+    }
+  }
+  h3 {
+    font-size: 2rem;
+    margin-top: 20%;
+    color: $navText;
+    @media (max-width: $tablet) {
+      font-size: 1.5rem;
+    }
+  }
+}
+@mixin text2 {
+  h1 {
     margin-top: 4rem;
     color: rgb(94, 14, 14);
     font-size: 4rem;
@@ -74,6 +101,7 @@ p {
         }
         list-style-type: none;
         text-decoration: none;
+        @include text1();
         /*
         #index {
           text-decoration: underline rgba(255, 0, 0, 0.562);
@@ -86,30 +114,6 @@ p {
         a {
           color: $navText;
           text-decoration: transparent;
-
-          h1 {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 4rem;
-
-            @media (max-width: $tablet) {
-              font-size: 2.7rem;
-            }
-          }
-          h2 {
-            font-size: 3rem;
-            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-              "Lucida Sans", Arial, sans-serif;
-            @media (max-width: $tablet) {
-              font-size: 2rem;
-            }
-          }
-          h3 {
-            font-size: 2rem;
-            margin-top: 20%;
-            @media (max-width: $tablet) {
-              font-size: 1.5rem;
-            }
-          }
         }
       }
     }
@@ -284,7 +288,8 @@ p {
 .backgroundBody {
   width: 100%;
   height: fit-content;
-  @include text1();
+  margin-bottom: 50px;
+  @include text2();
   .oneRow {
     text-align: left;
     background-color: $backgroundText;
@@ -420,6 +425,29 @@ p {
           width: 150px;
         }
       }
+    }
+  }
+}
+
+footer {
+  background-color: rgb(10, 10, 63);
+  height: fit-content;
+  padding: 60px 0px;
+}
+.footerRow {
+  margin-left: 100px;
+  @media (max-width: $tablet) {
+    margin-left: 0px;
+  }
+  @media (min-width: $mobile) {
+    @include row();
+  }
+
+  @include text1();
+  h2 {
+    margin-left: 30px;
+    @media (max-width: $mobile) {
+      margin-top: 8px;
     }
   }
 }

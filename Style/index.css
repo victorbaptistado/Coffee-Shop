@@ -78,43 +78,46 @@ p {
   }
 }
 
-.firstNavigation nav ul li a {
-  color: #dcfeff;
-  -webkit-text-decoration: transparent;
-          text-decoration: transparent;
-}
-
-.firstNavigation nav ul li a h1 {
+.firstNavigation nav ul li h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 4rem;
+  color: #dcfeff;
 }
 
 @media (max-width: 1023px) {
-  .firstNavigation nav ul li a h1 {
+  .firstNavigation nav ul li h1 {
     font-size: 2.7rem;
   }
 }
 
-.firstNavigation nav ul li a h2 {
-  font-size: 3rem;
+.firstNavigation nav ul li h2 {
+  font-size: 2rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #dcfeff;
 }
 
 @media (max-width: 1023px) {
-  .firstNavigation nav ul li a h2 {
+  .firstNavigation nav ul li h2 {
     font-size: 2rem;
   }
 }
 
-.firstNavigation nav ul li a h3 {
+.firstNavigation nav ul li h3 {
   font-size: 2rem;
   margin-top: 20%;
+  color: #dcfeff;
 }
 
 @media (max-width: 1023px) {
-  .firstNavigation nav ul li a h3 {
+  .firstNavigation nav ul li h3 {
     font-size: 1.5rem;
   }
+}
+
+.firstNavigation nav ul li a {
+  color: #dcfeff;
+  -webkit-text-decoration: transparent;
+          text-decoration: transparent;
 }
 
 #mobileNavigation {
@@ -375,6 +378,7 @@ p {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  margin-bottom: 50px;
 }
 
 .backgroundBody h1 {
@@ -466,16 +470,39 @@ p {
 }
 
 .backgroundBody .twoRows .firstRow h1 {
-  margin-top: 4rem;
-  color: #5e0e0e;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 4rem;
-  margin-bottom: 5rem;
+  color: #dcfeff;
+}
+
+@media (max-width: 1023px) {
+  .backgroundBody .twoRows .firstRow h1 {
+    font-size: 2.7rem;
+  }
 }
 
 .backgroundBody .twoRows .firstRow h2 {
-  color: #5e0e0e;
   font-size: 2rem;
-  margin-bottom: 5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #dcfeff;
+}
+
+@media (max-width: 1023px) {
+  .backgroundBody .twoRows .firstRow h2 {
+    font-size: 2rem;
+  }
+}
+
+.backgroundBody .twoRows .firstRow h3 {
+  font-size: 2rem;
+  margin-top: 20%;
+  color: #dcfeff;
+}
+
+@media (max-width: 1023px) {
+  .backgroundBody .twoRows .firstRow h3 {
+    font-size: 1.5rem;
+  }
 }
 
 .backgroundBody .twoRows .firstRow p {
@@ -505,16 +532,39 @@ p {
 }
 
 .backgroundBody .twoRows .secondRow h1 {
-  margin-top: 4rem;
-  color: #5e0e0e;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 4rem;
-  margin-bottom: 5rem;
+  color: #dcfeff;
+}
+
+@media (max-width: 1023px) {
+  .backgroundBody .twoRows .secondRow h1 {
+    font-size: 2.7rem;
+  }
 }
 
 .backgroundBody .twoRows .secondRow h2 {
-  color: #5e0e0e;
   font-size: 2rem;
-  margin-bottom: 5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #dcfeff;
+}
+
+@media (max-width: 1023px) {
+  .backgroundBody .twoRows .secondRow h2 {
+    font-size: 2rem;
+  }
+}
+
+.backgroundBody .twoRows .secondRow h3 {
+  font-size: 2rem;
+  margin-top: 20%;
+  color: #dcfeff;
+}
+
+@media (max-width: 1023px) {
+  .backgroundBody .twoRows .secondRow h3 {
+    font-size: 1.5rem;
+  }
 }
 
 .backgroundBody .twoRows .secondRow p {
@@ -622,6 +672,82 @@ p {
 
 .backgroundBody .menuRow .productWrapper .productContainer .menuImg {
   width: 150px;
+}
+
+footer {
+  background-color: #0a0a3f;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 60px 0px;
+}
+
+.footerRow {
+  margin-left: 100px;
+}
+
+@media (max-width: 1023px) {
+  .footerRow {
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 765px) {
+  .footerRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.footerRow h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 4rem;
+  color: #dcfeff;
+}
+
+@media (max-width: 1023px) {
+  .footerRow h1 {
+    font-size: 2.7rem;
+  }
+}
+
+.footerRow h2 {
+  font-size: 2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #dcfeff;
+}
+
+@media (max-width: 1023px) {
+  .footerRow h2 {
+    font-size: 2rem;
+  }
+}
+
+.footerRow h3 {
+  font-size: 2rem;
+  margin-top: 20%;
+  color: #dcfeff;
+}
+
+@media (max-width: 1023px) {
+  .footerRow h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.footerRow h2 {
+  margin-left: 30px;
+}
+
+@media (max-width: 765px) {
+  .footerRow h2 {
+    margin-top: 8px;
+  }
 }
 
 #food {
