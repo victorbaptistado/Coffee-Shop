@@ -335,7 +335,7 @@ p {
       flex-direction: column;
       text-align: center;
       justify-content: center;
-      @include text1();
+      @include text2();
       p {
         margin-left: 20%;
         margin-right: 20%;
@@ -350,7 +350,7 @@ p {
       flex-direction: column;
       text-align: center;
       justify-content: center;
-      @include text1();
+      @include text2();
       p {
         margin-left: 20%;
         margin-right: 20%;

@@ -470,39 +470,16 @@ p {
 }
 
 .backgroundBody .twoRows .firstRow h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 4rem;
+  color: #5e0e0e;
   font-size: 4rem;
-  color: #dcfeff;
-}
-
-@media (max-width: 1023px) {
-  .backgroundBody .twoRows .firstRow h1 {
-    font-size: 2.7rem;
-  }
+  margin-bottom: 5rem;
 }
 
 .backgroundBody .twoRows .firstRow h2 {
+  color: #5e0e0e;
   font-size: 2rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  color: #dcfeff;
-}
-
-@media (max-width: 1023px) {
-  .backgroundBody .twoRows .firstRow h2 {
-    font-size: 2rem;
-  }
-}
-
-.backgroundBody .twoRows .firstRow h3 {
-  font-size: 2rem;
-  margin-top: 20%;
-  color: #dcfeff;
-}
-
-@media (max-width: 1023px) {
-  .backgroundBody .twoRows .firstRow h3 {
-    font-size: 1.5rem;
-  }
+  margin-bottom: 5rem;
 }
 
 .backgroundBody .twoRows .firstRow p {
@@ -532,39 +509,16 @@ p {
 }
 
 .backgroundBody .twoRows .secondRow h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 4rem;
+  color: #5e0e0e;
   font-size: 4rem;
-  color: #dcfeff;
-}
-
-@media (max-width: 1023px) {
-  .backgroundBody .twoRows .secondRow h1 {
-    font-size: 2.7rem;
-  }
+  margin-bottom: 5rem;
 }
 
 .backgroundBody .twoRows .secondRow h2 {
+  color: #5e0e0e;
   font-size: 2rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  color: #dcfeff;
-}
-
-@media (max-width: 1023px) {
-  .backgroundBody .twoRows .secondRow h2 {
-    font-size: 2rem;
-  }
-}
-
-.backgroundBody .twoRows .secondRow h3 {
-  font-size: 2rem;
-  margin-top: 20%;
-  color: #dcfeff;
-}
-
-@media (max-width: 1023px) {
-  .backgroundBody .twoRows .secondRow h3 {
-    font-size: 1.5rem;
-  }
+  margin-bottom: 5rem;
 }
 
 .backgroundBody .twoRows .secondRow p {
