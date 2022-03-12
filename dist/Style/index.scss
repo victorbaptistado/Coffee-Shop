@@ -191,12 +191,6 @@ p {
   justify-content: right;
   background-image: linear-gradient(rgb(12, 78, 136), rgb(239, 255, 15));
 
-  .navigationToggle {
-    display: none;
-    @media (max-width: $tablet) {
-      display: inline;
-    }
-  }
   button {
     display: none;
     @media (max-width: $tablet) {
@@ -224,6 +218,12 @@ p {
       position: fixed;
       z-index: 2;
       cursor: pointer;
+    }
+    .navigationToggle {
+      display: none;
+      @media (max-width: $tablet) {
+        display: inline;
+      }
     }
   }
   .headerText {

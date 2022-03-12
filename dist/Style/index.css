@@ -245,16 +245,6 @@ p {
   background-image: linear-gradient(#0c4e88, #efff0f);
 }
 
-.backgroundHeader .navigationToggle {
-  display: none;
-}
-
-@media (max-width: 1023px) {
-  .backgroundHeader .navigationToggle {
-    display: inline;
-  }
-}
-
 .backgroundHeader button {
   display: none;
 }
@@ -293,6 +283,16 @@ p {
     position: fixed;
     z-index: 2;
     cursor: pointer;
+  }
+}
+
+.backgroundHeader #closeMenu .navigationToggle {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .backgroundHeader #closeMenu .navigationToggle {
+    display: inline;
   }
 }
 

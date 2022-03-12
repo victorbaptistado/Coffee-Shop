@@ -1,4 +1,3 @@
-
 var drinkBtn = document.getElementById("drinkBtn");
 var foodBtn = document.getElementById("foodBtn");
 
@@ -118,4 +117,6 @@ function getSelectValueFood(){
     }
 
 }
+
+
 

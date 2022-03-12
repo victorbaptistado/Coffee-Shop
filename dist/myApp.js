@@ -6,13 +6,11 @@ var closeMenu = document.getElementById("closeMenu");
 mobileMenu.addEventListener("click", displayDiv);
 function displayDiv() {
     mobileNavigation.style.display = "block";
-    mobileMenu.style.display = "none";
     closeMenu.style.display = "block";
 }
 closeMenu.addEventListener("click", hideDiv);
 function hideDiv() {
     mobileNavigation.style.display = "none";
-    mobileMenu.style.display = "block";
     closeMenu.style.display = "none";
 }
 /* ----- FIRST NAVIGATION MENU ------- */
